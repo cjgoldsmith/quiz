@@ -26,8 +26,8 @@ Apply basic css via boostrap or similar.
   * Using SQLite
 
 # How to run locally
-
-  * inside a virtualenv run: pip install -r requirements.txt
+  * create a virtualenv using python 3.1 or greater
+  * inside the virtualenv run: pip install -r requirements.txt
   * run: python manage.py migrate
   * run: python manage.py createsuperuser
   * run: python manage.py runserver
