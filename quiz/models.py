@@ -7,14 +7,22 @@ class InstructionalContent(models.Model):
         blank=False,
         help_text="Text block containing instructional learning material")
 
+    def __str__(self):
+        return type(self).__name__ + ": " + self.instruction[:50]
+
 
 class Question(models.Model):
+
+    answer_choices = ((True, 'Yes'), (False, 'No'))
 
     question = models.CharField(
         blank=False,
         max_length=255)
 
-    answer = models.BooleanField()
+    answer = models.BooleanField(choices=answer_choices, default=True, null=False, blank=False)
+
+    def __str__(self):
+        return type(self).__name__ + ": " + self.question[:50]
 
 
 class Lesson(models.Model):
@@ -30,3 +38,6 @@ class Lesson(models.Model):
     passing_percentage = models.IntegerField(
         default=60,
         help_text="Percentage value (0 - 100) that qualifies as a passed lesson.")
+
+    def __str__(self):
+        return type(self).__name__ + ": " + self.title[:50]
