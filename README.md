@@ -14,5 +14,7 @@ Sample Code Quiz Application
     * A score page for viewing your score for that quiz.
 
 - Not included for expediency:
-  * Logged in users / saved scores / session tracking.
+  * Logged in users / saved scores / session tracking. Except for users created for use with the admin.
+  * Using SQLite
+  
 

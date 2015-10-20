@@ -1,10 +1,12 @@
 from django.db import models
 
+
 class InstructionalContent(models.Model):
 
     instruction = models.TextField(
         blank=False,
-        help_text= "Text block containing instructional learning material")
+        help_text="Text block containing instructional learning material")
+
 
 class Question(models.Model):
 
@@ -13,6 +15,7 @@ class Question(models.Model):
         max_length=255)
 
     answer = models.BooleanField()
+
 
 class Lesson(models.Model):
 
