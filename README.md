@@ -1,7 +1,11 @@
 # quiz
 Sample Code Quiz Application
+Time taken :  ~ 4-5 hours
 
 # Assumptions
+
+- Instructions and Quizes should be should be grouped together in a logical relationship ( Lesson ).
+- Quizes are always randomly generated and are a subset of available quize questions for that lesson in order to prevent memorization.
 
 - Default templating language and the default Django ORM are being left in place since there appears to be an emphasis on using vanilla python + Django.
 
@@ -24,5 +28,7 @@ Sample Code Quiz Application
   * run: python manage.py createsuperuser
   * run: python manage.py runserver
   * navigate in a browswer to: http://127.0.0.1:8000/ or http://127.0.0.1:8000/admin
+
+NOTE: Lessons are most easily created from manipulating the Lesson object in the admin interface.
   
 
