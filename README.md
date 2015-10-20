@@ -2,6 +2,10 @@
 Sample Code Quiz Application
 Time taken :  ~ 4-5 hours
 
+NOTE: This is the point at which I would normally try to demo a prototype to the customer if available ( given the instructions provided )
+Additional efforts would be made to provide a base template class to generate HTML that can pass a validator. Write Unit tests.
+Apply basic css via boostrap or similar.
+
 # Assumptions
 
 - Instructions and Quizes should be should be grouped together in a logical relationship ( Lesson ).
