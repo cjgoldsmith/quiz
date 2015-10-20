@@ -19,6 +19,7 @@ class Question(models.Model):
 
 class Lesson(models.Model):
 
+    title = models.CharField(max_length=140)
     instructions = models.ManyToManyField(InstructionalContent)
     questions = models.ManyToManyField(Question)
 
