@@ -1,0 +1,7 @@
+<h1> Here are your results:</h1>
+
+<p>Number correct: {{ score }}</p>
+<p>Percent Correct: {{ percent|floatformat }}%</p>
+<p>Passed? {{ passed }}</p>
+
+<a href="{% url 'lesson-list' %}">Return to lessons list</a>
