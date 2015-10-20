@@ -1,0 +1,11 @@
+{% with object as lesson %}
+<h1>{{ lesson.title }}</h1>
+<h2>Content</h2>
+<ul>
+{% for instruction in lesson.instructions.all %}
+    <li>{{ instruction.instruction }}</li>
+{% empty %}
+    <li>No instruction is available for this lesson yet.</li>
+{% endfor %}
+</ul>
+{% endwith %}

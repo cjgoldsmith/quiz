@@ -1,0 +1,8 @@
+<h1>Available Lessons</h1>
+<ul>
+{% for lesson in object_list %}
+    <li><a href="{% url 'lesson-view' pk=lesson.id %}">{{ lesson.title }}</a></li>
+{% empty %}
+    <li> No lessons have been built yet. </li>
+{% endfor %}
+</ul>
