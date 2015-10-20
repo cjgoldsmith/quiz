@@ -16,5 +16,13 @@ Sample Code Quiz Application
 - Not included for expediency:
   * Logged in users / saved scores / session tracking. Except for users created for use with the admin.
   * Using SQLite
+
+# How to run locally
+
+  * inside a virtualenv run: pip install -r requirements.txt
+  * run: python manage.py migrate
+  * run: python manage.py createsuperuser
+  * run: python manage.py runserver
+  * navigate in a browswer to: http://127.0.0.1:8000/ or http://127.0.0.1:8000/admin
   
 
